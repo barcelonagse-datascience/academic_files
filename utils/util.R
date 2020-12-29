@@ -58,7 +58,7 @@ plot_confusion_matrix <- function(real, pred){
 		geom_tile(aes(fill = Freq)) +
 		geom_text(aes(label = sprintf("%1.0f", Freq)), vjust = 1) +
 		scale_fill_gradient(low = "#fcfcfc",
-							high = "#000077"
+							high = "#004488"
 		)+
 		theme_minimal()+
 		theme(panel.grid.minor = element_line(colour = "white")) +
