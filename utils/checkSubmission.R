@@ -18,7 +18,7 @@ checkSubmission <- function(){
   # Catch if not all variables are defined, but the code runs.
   if (length(run)>0){
     if ( all(solutionVars %in% envVars)){
-      cat(sprintf('Your submission seems to run and contains all required variables.'))
+      cat(sprintf('Your submission runs and contains all required variables. Thanks and have a great day!'))
     } else {
       whichMiss <- solutionVars[ !(solutionVars %in% envVars) ]
       cat(sprintf('I cant seem to find the following variables: \n'))
