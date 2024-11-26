@@ -8,12 +8,12 @@ checkSubmission <- function(){
                                      conditionMessage(cond) ))
                    })) )
   envVars <- ls(envir=sol.env)
-  solutionVars <- c('avgInflation', 'cnames', 'countries', 'data', 'eaMdl', 'eaPred',
-            'eaVars', 'elnet', 'elnetPred','es.df', 'esCoef', 'esMdl', 'fmPred',
-            'fullMdl', 'inflationData', 'lasso', 'lassoPred', 'mainSeries',
-            'mse', 'N', 'pred', 'pred.df', 'ridge', 'ridgePred',
-            'spainCols', 'T' , 'test.df', 'train.df', 'uniqCountries',
-            'inflationSep24')
+  solutionVars <- c("data", "INDPRO_MIN", "INDPRO_MAX", "INDPRO_MEAN", "INDPRO_SD",
+                    "y", "X", "pred.df", "IS", "train.df", "test.df",
+                    "fullMdl", "fmPred", "selMdl", "selPred", "lasso", "lassoPred", "ridge", "ridgePred", "elnet", "elnetPred",
+                    "knn", "knnPred", "dTree", "dTreePred", "rf", "rfPred",
+                    "pred", "mse", "lassoCoef", "lassoSel", "elnetCoef", "elnetSel",
+                    "dTreeImportance", "rfImportance")
 
   # Catch if not all variables are defined, but the code runs.
   if (length(run)>0){
