@@ -43,4 +43,4 @@ checkSubmission <- function() {
     }
   }
 }
-checkSubmission()
+
